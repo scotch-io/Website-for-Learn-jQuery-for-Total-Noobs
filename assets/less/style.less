@@ -553,7 +553,7 @@ h2.title-thing {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9999999999;
+    z-index: 99999999;
     .clearfix;
 
     a {
@@ -648,6 +648,30 @@ h2.title-thing {
         transform: translateY(-25px);
     }
 
+    .make-popup {
+        display: inline-block;
+        font-size: 55px;
+        color: #fff;
+        -moz-transition: all 450ms cubic-bezier(.32,1.25,.375,1.15);
+        transition: all 450ms cubic-bezier(.32,1.25,.375,1.15);
+        z-index: 999998;
+        position: relative;
+
+        span {
+            display: block;
+            font-size: 8px;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 1;
+            margin-top: -6px;
+        }
+
+        &:hover {
+            color: #25ff8a;
+            transform: scale(1.2);
+        }
+    }
+
     .main {
         transform: translateY(25px);
     }
@@ -724,6 +748,7 @@ main {
         font-size: 20px;
     }
 }
+
 
 
 
