@@ -1,0 +1,75 @@
+/*==============================
+=            COLORS            =
+==============================*/
+@base: #113a66;
+@action: #6fc0d5;
+@action-light: #d2e4f2;
+
+@alt: #ec7c62;
+
+@offset: #dfe3e6;
+@offset-light: #f9f9fa;
+
+@background: #284f74;
+@light-background: #365e89;
+@dark-background: #272e35;
+@dark-background2: #272e35;
+
+
+@accent: #e0d1ce;
+
+@input: #ffffff;
+
+@facebook: #3b5998;
+@twitter: #55acee;
+@youtube: #e52d27;
+@instagram-gradient: radial-gradient(circle at 33% 100%,#fed373 4%,#f15245 30%,#d92e7f 62%,#9b36b7 85%,#515ecf);
+@instagram-purple: #8a3ab9;
+@instagram-blue: #4c68d7;
+
+@overlay: fade(@alt, 85%);
+@error: #ff8888;
+@success: #60ecb5;
+
+
+
+/*===================================
+=            TRANSITIONS            =
+===================================*/
+.default-transition { transition: all 225ms ease; }
+.default-transition-slow { transition: all 555ms ease; }
+.default-transition-crawl { transition: all 700ms ease; }
+.default-transition-fast { transition: all 123ms ease; }
+.bouncy-transition { transition: all 450ms cubic-bezier(0.32,1.25,0.375,1.15); }
+.bouncy-transition-fast { transition: all 150ms cubic-bezier(0.32,1.25,0.375,1.15); }
+.bouncy-transition-medium { transition: all 300ms cubic-bezier(0.32,1.25,0.375,1.15); }
+.bouncy-transition-slow { transition: all 777ms cubic-bezier(0.32,1.25,0.375,1.15); }
+.super-bouncy-transition { transition: all 225ms cubic-bezier(.61,-0.67,0,1.45); }
+.cubic-bomb { transition: all 0.4s cubic-bezier(0, 0, 0, 2.25); }
+
+
+/*====================================
+=            BREAK POINTS            =
+====================================*/
+@super-wide-up: ~'(min-width: 1601px)';
+@super-wide-down: ~'(max-width: 1600px)';
+@wide-screen-down: ~'(max-width: 1199px)';
+@desktop-down: ~'(max-width: 991px)';
+@real-tablet-down: ~'(max-width: 768px)';
+@tablet-down: ~'(max-width: 767px)';
+@phone-down: ~'(max-width: 480px)';
+@small-phone-down: ~'(max-width: 320px)';
+
+@average-screen-height-down: ~'(max-height: 767px)';
+
+
+
+/*=============================
+=            FONTS            =
+=============================*/
+// 300, 400, 600, 700, 900
+.heading-font { font-family: 'Anton', sans-serif; }
+.base-font { font-family: 'PT Sans Narrow', sans-serif; }
+
+// 400, 700
+.alt-font { font-family: 'Exo 2', sans-serif; }

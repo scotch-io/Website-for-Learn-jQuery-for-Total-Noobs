@@ -1,0 +1,90 @@
+body {
+    -webkit-font-smoothing: antialiased;
+}
+.section, section, header, footer, main, article, nav, aside, form { position: relative; }
+a {
+    outline: none !important;
+    text-decoration: none !important;
+    color: @action;
+    touch-action: manipulation;
+    cursor: pointer;
+    .default-transition;
+
+    &:hover, &:focus {
+        color: lighten(@action, 10%);
+    }
+
+    &:active {
+        color: lighten(@action, 20%);
+    }
+}
+
+p {
+    margin-bottom: 20px;
+
+    a {
+        font-weight: 700;
+        display: inline-block;
+        position: relative;
+
+        &:before, &:after {
+            .bouncy-transition;
+            .pseudo-please;
+            width: 0;
+            height: 1px;
+            background: @alt;
+            opacity: 0.7;
+        }
+
+        &:before {
+            bottom: 1px;
+            left: 0;
+        }
+
+        &:after {
+            bottom: 0px;
+            right: 0;
+        }
+
+        &:hover, &:focus {
+            &:before,
+            &:after {
+                width: 100%;
+            }
+        }
+    }
+}
+h1, .h1 {
+    .heading-font;
+}
+h2, .h2 {
+
+}
+h3, .h3 {
+
+}
+h4, .h4 {
+
+}
+h5, .h5 {
+
+}
+h6, .h6 {
+
+}
+hr {
+
+}
+blockquote, .blockquote {
+
+}
+::selection {
+    background: @alt;
+    color: #fff;
+}
+::-moz-selection {
+    background: @alt;
+    color: #fff;
+}
+
+
